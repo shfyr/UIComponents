@@ -8,8 +8,8 @@
 import SwiftUI
 
 public struct ButtonAnimation: View {
-    @Binding var isExpanded: Bool
-
+    @Binding public var isExpanded: Bool
+    
     public var body: some View {
         Image(systemName: "star")
             .frame(width: 30, height: 30)
