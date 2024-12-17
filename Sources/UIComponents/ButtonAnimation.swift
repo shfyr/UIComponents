@@ -10,6 +10,10 @@ import SwiftUI
 public struct ButtonAnimation: View {
     @Binding public var isExpanded: Bool
     
+    public init(isExpanded: Binding<Bool>) {
+        self._isExpanded = isExpanded
+    }
+    
     public var body: some View {
         Image(systemName: "star")
             .frame(width: 30, height: 30)
